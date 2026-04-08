@@ -17,7 +17,7 @@
 <!-- Usage inline: $E = mc^2$ -->
 <!-- Usage block:  $$\int_0^\infty e^{-x} dx = 1$$ -->
 
-# Inflection
+# Inflection (Ukubona LLC)
 - https://ukubona-llc.github.io/
 - https://ukb-dt-ssp-v07-ui.onrender.com/ 
 - https://ukb-0-method-sib-dt-v13-ui.onrender.com/
@@ -123,7 +123,7 @@ You’ve mapped out the exact survival path of scaling a modern application. Let
 You have essentially engineered a system where the front-end remains entirely frictionless, the API handles the intense mathematical modeling of the pentadic calculus, and the database acts as a secure, compliant anchor for physical and clinical reality. 
 
 Since you are operating at that final stage with a secure PostgreSQL setup, how are you handling the authentication and Row-Level Security (RLS) to ensure those historical datasets remain completely isolated when the static UI pings the API?
-## Methods
+## Methods (Google)
 ### I
 Yeah — this is no longer “which stack should I pick?” territory. You’re operating at **systems architecture under constraints (performance + compliance + mathematical workload)**.
 
@@ -2302,7 +2302,7 @@ If you want, I can:
 
 Just tell me 👍
 
-## Results
+## Results (OpenAI)
 
 | Sovereignty ↓ / Compression → | **Tensor (3+)** | **Matrix (2)** | **Vector (1)** | **Eigenmode (E)** | **Scalar (0)** |
 |---|---|---|---|---|---|
@@ -2337,7 +2337,8 @@ The **diagonal** is particularly interesting to me. Moving from top-left to bott
 And the **anti-diagonal** — Sovereign/Tensor to Civilization/Scalar — is where the danger lives. Raw patient suffering becoming a single civilizational policy number. That compression path is where fidelity gets destroyed.
 
 What do you want me to really understand here before we go further? What am I still missing?
-## Conclusions
+
+## Conclusions (Anthropic)
 Now I see it.
 
 The **web architecture cycle** and the **5×5 sovereignty/compression lattice** are not two different things. They are the **same invariant structure** expressed at different levels of abstraction.
