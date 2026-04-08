@@ -2724,3 +2724,224 @@ The `grey_overall` function is a straight mean across dimensions. But `cardiac_w
 The seed data is the case. Enaj. That's not sample data — that's the red cell of the lattice, committed to PostgreSQL, append-only, with the missed scalar encoded as an executable rule.
 
 What's the current blocker? What does the system need next?
+
+---
+
+You’re right to resist stopping at four — your system already *thinks* in five (ROYGBIV collapses, operator sets, grey gradients, η phases). A tetrad here would be structurally incomplete.
+
+But **“a priori”** isn’t the right fifth state.
+
+---
+
+# ⚠️ Why “A Priori” Doesn’t Fit
+
+“A priori” describes:
+
+* how knowledge is **derived** (before data)
+
+Your states describe:
+
+* what the system is **allowed to do**
+
+So “a priori” sits in the **compute layer**, not the **authority layer**.
+
+---
+
+# 🧠 What’s Missing in Your Current Set
+
+You already have:
+
+| State            | Meaning                         |
+| ---------------- | ------------------------------- |
+| ✅ AUTHORIZED     | Action allowed                  |
+| ⚠️ PROVISIONAL   | Weak signal, proceed cautiously |
+| ⛔ BLOCKED        | Action forbidden                |
+| 🔁 REQUIRES DATA | Cannot proceed                  |
+
+But you’re missing a state for:
+
+> **“We must act now, even though the system is incomplete.”**
+
+This is *not* authorization.
+This is **override under urgency**.
+
+---
+
+# 🔥 The Missing Fifth State
+
+## 🟥 **MANDATED** (or **OVERRIDE**)
+
+```id="7c4v9m"
+🟥 MANDATED
+```
+
+---
+
+# 🧩 Full Pentad
+
+```id="1r3qkd"
+🟥 MANDATED
+✅ AUTHORIZED
+⚠️ PROVISIONAL
+🔁 REQUIRES DATA
+⛔ BLOCKED
+```
+
+---
+
+# 🧠 Meaning of Each (Clean Semantics)
+
+### 🟥 MANDATED
+
+* Action is **forced**
+* Overrides:
+
+  * grey uncertainty
+  * missing data
+* Triggered by:
+
+  * R-layer (e.g. rest pain 10/10)
+  * hard clinical invariants
+
+👉 *“Act first. Validate later.”*
+
+---
+
+### ✅ AUTHORIZED
+
+* Sufficient evidence
+* System complete enough
+* Normal execution
+
+---
+
+### ⚠️ PROVISIONAL
+
+* Weak or mixed signals
+* Allowed but flagged
+* Requires monitoring
+
+---
+
+### 🔁 REQUIRES DATA
+
+* Cannot proceed meaningfully
+* Missing scalar or key variable
+
+---
+
+### ⛔ BLOCKED
+
+* Action would be wrong/dangerous
+* Contradicted by data or rules
+
+---
+
+# 🔥 Why This Fifth State Matters
+
+Right now your system risks this failure:
+
+> High grey + high probability → hesitation → no action
+
+That’s exactly what happened in your model:
+
+* η collapsed
+* scalar not executed
+* system froze
+
+---
+
+### 🟥 MANDATED prevents that
+
+It encodes:
+
+> **Certain patterns must bypass uncertainty**
+
+---
+
+# ⚙️ Where It Fits in Your Architecture
+
+In your `/authority` layer:
+
+```js id="p5n0pf"
+if (R_layer_triggered && life_threatening_pattern) {
+  return "MANDATED"
+}
+
+if (missing_critical_data) {
+  return "REQUIRES_DATA"
+}
+
+if (contradiction_detected) {
+  return "BLOCKED"
+}
+
+if (confidence_high) {
+  return "AUTHORIZED"
+}
+
+return "PROVISIONAL"
+```
+
+---
+
+# 🧠 Deeper Insight (This is the real reason you need 5)
+
+Your system spans two axes:
+
+### 1. Evidence completeness (Grey)
+
+### 2. Action urgency (ROYGBIV priority)
+
+A tetrad cannot represent both dimensions cleanly.
+
+The fifth state — **MANDATED** — is the only one that:
+
+* **decouples action from certainty**
+* allows **high urgency + low knowledge**
+
+---
+
+# 🧭 Naming Alternatives (if you want tone control)
+
+| Option            | Tone                            |
+| ----------------- | ------------------------------- |
+| **MANDATED**      | Clinical, formal (best fit)     |
+| **OVERRIDE**      | Technical, system-centric       |
+| **FORCED ACTION** | Explicit, blunt                 |
+| **IMPERATIVE**    | Philosophical                   |
+| **RED FLAG**      | Too narrow (already in R layer) |
+
+👉 **Recommendation: `MANDATED`**
+
+---
+
+# ✅ Final Form
+
+```id="7v3n6e"
+🟥 MANDATED       // act now, uncertainty irrelevant
+✅ AUTHORIZED     // act, sufficient support
+⚠️ PROVISIONAL   // act carefully, weak signal
+🔁 REQUIRES DATA // pause, gather inputs
+⛔ BLOCKED       // do not act
+```
+
+---
+
+# 🧠 Final Insight
+
+You now have:
+
+> A system where **truth does not guarantee action**,
+> and **lack of truth does not prevent action**.
+
+That’s the correct model for real-world decision systems.
+
+---
+
+If you want next step, I can:
+
+* Map these states visually into your UI (color + animation system)
+* Or formalize transitions between them as a state machine
+
+That’s where this becomes fully operational.
