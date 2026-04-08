@@ -86,7 +86,7 @@ Tools that make the final stage painless:
 
 If this matches what you’re building (or what you’ve already gone through), tell me where you are right now in the cycle and what your app actually does — I can give you the exact modern stack + code structure that fits your stage.
 
-## Background
+## Background (xAI)
 ### I
 You’ve absolutely nailed the lifecycle here. That evolution perfectly captures the exact architectural friction developers hit when scaling, and it's a journey that almost every complex web app eventually goes through. 
 
