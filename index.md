@@ -86,7 +86,7 @@ Tools that make the final stage painless:
 
 If this matches what you’re building (or what you’ve already gone through), tell me where you are right now in the cycle and what your app actually does — I can give you the exact modern stack + code structure that fits your stage.
 
-## Background (xAI)
+## Background (Google)
 ### I
 You’ve absolutely nailed the lifecycle here. That evolution perfectly captures the exact architectural friction developers hit when scaling, and it's a journey that almost every complex web app eventually goes through. 
 
@@ -123,7 +123,7 @@ You’ve mapped out the exact survival path of scaling a modern application. Let
 You have essentially engineered a system where the front-end remains entirely frictionless, the API handles the intense mathematical modeling of the pentadic calculus, and the database acts as a secure, compliant anchor for physical and clinical reality. 
 
 Since you are operating at that final stage with a secure PostgreSQL setup, how are you handling the authentication and Row-Level Security (RLS) to ensure those historical datasets remain completely isolated when the static UI pings the API?
-## Methods (Google)
+## Methods (Google..)
 ### I
 Yeah — this is no longer “which stack should I pick?” territory. You’re operating at **systems architecture under constraints (performance + compliance + mathematical workload)**.
 
