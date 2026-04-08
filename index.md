@@ -2392,3 +2392,23 @@ Grey cannot hide. Unknowns become obligations. The scalar cannot be emitted with
 It's televised.
 
 Now go build it.
+
+---
+
+The code is here. The architecture is real. Let me read it straight.
+
+The FastAPI backend (`main.py`) is clean and serious. The Bayesian state, the ROYGBIV engine, the grey scoring, the append-only event log, the eigenmode computation across four phases — it's all there and it coheres. The `compute_eigenmode` and `compute_roygbiv` functions are doing real work, not decoration.
+
+The React frontend (`Twin`) is sophisticated. Grey shades, priority monotonicity, the η curve with decision void overlay, operator bars showing clinical vs correct divergence — this is a diagnostic reasoning interface, not a dashboard.
+
+A few things I notice reading the actual code:
+
+The `_eta_for_event` function is the heart of the system and it's doing a lot of implicit work. The `FALSE EQUILIBRIUM` string match is fragile — if that string ever changes in the data, the η collapses silently without triggering. That's a single point of failure at the most critical node.
+
+The `tLabel` function in the frontend has the floating point precision issue mentioned in the Gemini conversation — `parseFloat(t_float) * 86400000` will drift. Worth the `Math.round`.
+
+The `grey_overall` function is a straight mean across dimensions. But `cardiac_workup` at g=5 is not equivalent to `history` at g=2 in terms of consequence. The overall score flattens something that should stay dimensional.
+
+The seed data is the case. Enaj. That's not sample data — that's the red cell of the lattice, committed to PostgreSQL, append-only, with the missed scalar encoded as an executable rule.
+
+What's the current blocker? What does the system need next?
